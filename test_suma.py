@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import patch
 from calculos import suma,resta,multiplicacion,division
 
 class TestSumar(unittest.TestCase):
@@ -25,9 +24,7 @@ class TestMultipliar(unittest.TestCase):
         self.assertEqual(multiplicacion(0,5), 0)
 
 class TestDividir(unittest.TestCase):
-    @patch('calculos.division')
-    def test_dividir(self, mock_division):
-        mock_division.side_effect = lambda x, y: x / y if y != 0 else "Error, no se puede dividir entre 0"
+    def test_dividir(self):
         self.assertEqual(division(10,5), 2)
         self.assertEqual(division(5,10), 0.5)
         self.assertEqual(division(6,-2), -3)
