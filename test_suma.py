@@ -29,7 +29,7 @@ class TestDividir(unittest.TestCase):
         self.assertEqual(division(5,10), 0.5)
         self.assertEqual(division(6,-2), -3)
         self.assertEqual(division(0,2), 0)
-        self.assertEqual(division(8,0), "Error, no se puede dividir entre 0")
+        self.assertEqual(division(8,0), "Error, ZeroDivisionError")
         
 if __name__ == "__main__":
     unittest.main()
