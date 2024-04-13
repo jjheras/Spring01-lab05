@@ -19,6 +19,7 @@ class TestRestar(unittest.TestCase):
 class TestMultipliar(unittest.TestCase):
     def test_multiplicar(self):
         self.assertEqual(multiplicacion(3,2), 6)
+        self.assertEqual(multiplicacion(5,10000), 50000)
         self.assertEqual(multiplicacion(5,0), 0)
         self.assertEqual(multiplicacion(6,-2), -12)
         self.assertEqual(multiplicacion(0,5), 0)
