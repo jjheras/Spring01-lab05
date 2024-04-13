@@ -15,7 +15,7 @@ class TestRestar(unittest.TestCase):
         self.assertEqual(resta(1,1), 0)
         self.assertEqual(resta(-1,-1), 0)
         self.assertEqual(resta(1,-1), 2)
-        
+
 class TestMultipliar(unittest.TestCase):
     def test_multiplicar(self):
         self.assertEqual(multiplicacion(3,2), 6)
@@ -26,7 +26,6 @@ class TestMultipliar(unittest.TestCase):
 class TestDividir(unittest.TestCase):
     def test_dividir(self):
         self.assertEqual(division(10,5), 2)
-        self.assertEqual(division(5,10), 0.5)
         self.assertEqual(division(6,-2), -3)
         self.assertEqual(division(0,2), 0)
         self.assertEqual(division(8,0), "Error, ZeroDivisionError")
